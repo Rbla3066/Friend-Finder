@@ -169,6 +169,7 @@
 			pic: $("#pic").val()
 		};
 		$.post(url, newFriend, function(data){
+			console.log(data)
 			$(".survey").html("<div class='text-center'>Your Match</div><div class='text-center'>"+data.name+"</div><div class='text-center'>"+data.gender+"</div><img src='"+data.pic+"'>");
 		});
 		$("#name").val("");
