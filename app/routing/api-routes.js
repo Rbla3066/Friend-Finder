@@ -13,7 +13,7 @@ module.exports = function(app){
 			for(var j=0; j<friends[i].scores.length; j++){
 				newDif += Math.abs(friends[i].scores[j] - req.body.scores[j])
 			};
-			if(newDif < least){
+			if(newDif < least && friends[i].gender != req.body.gender){
 				least = newDif;
 				match = i;
 			};
