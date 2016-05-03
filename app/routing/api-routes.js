@@ -19,6 +19,6 @@ module.exports = function(app){
 			};
 		};
 		friends.push(req.body);
-		return friends[match];
+		res.json(friends[match]);
 	})
 }
