@@ -160,7 +160,7 @@
 		var url = window.location.origin + '/api/friends';
 		var scores = [];
 		for(var i=0; i<10; i++){
-			scores.push($("#ques"+i).val());
+			scores.push(parseInt($("#ques"+i).val()));
 		};
 		console.log(url)
 		var newFriend = {
